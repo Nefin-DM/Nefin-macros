@@ -14,7 +14,7 @@ const position = await Sequencer.Crosshair.show({
 
 if (!position) return;
 
-const darknessSource = {
+const source = {
   x: position.x,
   y: position.y,
   rotation: 0,
@@ -45,7 +45,7 @@ const darknessSource = {
   }
 };
 
-await canvas.scene.createEmbeddedDocuments("AmbientLight", [darknessSource]);
+await canvas.scene.createEmbeddedDocuments("AmbientLight", [source]);
 
 /* negative: false */
 
