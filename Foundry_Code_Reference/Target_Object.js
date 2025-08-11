@@ -25,7 +25,7 @@ const drawingById = canvas.scene.drawings.get("DRAWING_ID_HERE");
 const itemByName = token.actor.items.getName('ITEM_NAME_HERE');
 const itemById = game.items.get("ITEM_ID_HERE")
 
-//Target item that is owned by actor
+//Target item that is owned by target actor
 const target = Array.from(game.user.targets)[0];
 const named = target.actor.name;
 const targetActor = game.actors.getName(named);
