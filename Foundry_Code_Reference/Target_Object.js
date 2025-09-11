@@ -51,3 +51,8 @@ const sceneById = game.scene.get("SCENE_ID_HERE")
 const journalById = game.journal.get("JOUNRAL_ID_HERE")
 let journalByName = game.journal.getName("JOURNAL_NAME_HERE")
 
+/* Target token by item in actor */
+const actor = item.actor;
+const token = actor.getActiveTokens()[0];
+const uuid = token.document.uuid;
+const sourceToken = await fromUuid(uuid);
